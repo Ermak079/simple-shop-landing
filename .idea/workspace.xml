@@ -1,333 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="20e00795-c652-4794-bce3-6689d59585a1" name="Changes" comment="Первый коммит">
-      <change afterPath="$PROJECT_DIR$/.phalcon/devtools.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/migrations/1.0.0.0/pictures.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/migrations/1.0.0.0/products.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/migrations/1.0.0.0/products_pictures.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/migrations/1.0.0.0/sections.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/migrations/1.0.0.0/sections_pictures.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/migrations/1.0.0.0/settings.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/autoload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/composer/InstalledVersions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/composer/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/composer/installed.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/composer/platform_check.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Acl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Acl/Adapter/Memory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Acl/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Acl/Role.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Acl/RoleAware.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Acl/RoleInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Annotations/Adapter/Apcu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Annotations/Adapter/Memory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Annotations/Annotation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Annotations/Collection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Annotations/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Annotations/Reader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Annotations/ReaderInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Annotations/Reflection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Application.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Application/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Assets/Collection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Assets/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Assets/FilterInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Assets/Filters/Cssmin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Assets/Filters/Jsmin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Assets/Filters/None.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Assets/Inline.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Assets/Inline/Css.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Assets/Inline/Js.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Assets/Manager.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Cli/Console.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Cli/Console/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Cli/Dispatcher.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Cli/Dispatcher/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Cli/DispatcherInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Cli/Router.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Cli/Router/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Cli/Router/Route.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Cli/Router/RouteInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Cli/RouterInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Cli/Task.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Cli/TaskInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Config/Adapter/Grouped.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Config/Adapter/Ini.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Config/Adapter/Json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Config/Adapter/Php.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Config/Adapter/Yaml.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Config/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Crypt.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Crypt/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Crypt/Mismatch.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/CryptInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Db.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Db/Adapter/Pdo/Factory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Db/Adapter/Pdo/Mysql.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Db/Adapter/Pdo/Postgresql.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Db/Adapter/Pdo/Sqlite.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Db/Column.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Db/ColumnInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Db/Dialect.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Db/Dialect/Mysql.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Db/Dialect/Postgresql.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Db/Dialect/Sqlite.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Db/DialectInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Db/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Db/Index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Db/IndexInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Db/Profiler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Db/Profiler/Item.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Db/RawValue.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Db/Reference.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Db/ReferenceInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Db/Result/Pdo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Db/ResultInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Debug.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Debug/Dump.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Debug/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Di.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Di/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Di/FactoryDefault.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Di/FactoryDefault/Cli.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Di/Injectable.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Di/InjectionAwareInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Di/Service.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Di/Service/Builder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Di/ServiceInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Di/ServiceProviderInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/DiInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Dispatcher.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/DispatcherInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Escaper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Escaper/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/EscaperInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Events/Event.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Events/EventInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Events/EventsAwareInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Events/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Events/Manager.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Events/ManagerInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Factory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Factory/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/FactoryInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Filter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Filter/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/FilterInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Flash.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Flash/Direct.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Flash/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Flash/Session.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/FlashInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Forms/Element/Check.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Forms/Element/Date.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Forms/Element/Email.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Forms/Element/File.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Forms/Element/Hidden.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Forms/Element/Numeric.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Forms/Element/Password.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Forms/Element/Radio.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Forms/Element/Select.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Forms/Element/Submit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Forms/Element/Text.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Forms/Element/TextArea.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Forms/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Forms/Form.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Forms/Manager.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Http/Cookie.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Http/Cookie/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Http/Request.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Http/Request/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Http/Request/File.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Http/Request/FileInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Http/RequestInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Http/Response.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Http/Response/Cookies.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Http/Response/CookiesInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Http/Response/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Http/Response/Headers.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Http/Response/HeadersInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Http/ResponseInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Image.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Image/Adapter/Gd.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Image/Adapter/Imagick.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Image/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Kernel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Loader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Loader/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Logger.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Logger/Adapter/Stream.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Logger/Adapter/Syslog.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Logger/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Logger/Formatter/Json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Logger/Formatter/Line.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Logger/Item.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Application.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Application/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Controller.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Controller/BindModelInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/ControllerInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Dispatcher.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Dispatcher/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/DispatcherInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/EntityInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Micro.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Micro/Collection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Micro/CollectionInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Micro/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Micro/LazyLoader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Micro/MiddlewareInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/Behavior.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/Behavior/SoftDelete.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/Behavior/Timestampable.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/BehaviorInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/Binder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/Binder/BindableInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/BinderInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/Criteria.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/CriteriaInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/Manager.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/ManagerInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/MetaData.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/MetaData/Apc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/MetaData/Apcu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/MetaData/Files.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/MetaData/Libmemcached.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/MetaData/Memcache.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/MetaData/Memory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/MetaData/Redis.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/MetaData/Session.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/MetaData/Strategy/Annotations.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/MetaData/Strategy/Introspection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/MetaData/StrategyInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/MetaData/Xcache.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/MetaDataInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/Query.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/Query/Builder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/Query/BuilderInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/Query/Lang.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/Query/Status.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/Query/StatusInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/QueryInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/Relation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/RelationInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/ResultInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/Resultset.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/Resultset/Complex.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/Resultset/Simple.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/ResultsetInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/Row.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/Transaction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/Transaction/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/Transaction/Failed.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/Transaction/Manager.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/Transaction/ManagerInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/TransactionInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Model/ValidationFailed.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/ModelInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/ModuleDefinitionInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Router.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Router/Annotations.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Router/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Router/Group.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Router/GroupInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Router/Route.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/Router/RouteInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/RouterInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/View.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/View/Engine/Php.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/View/Engine/Volt.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/View/Engine/Volt/Compiler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/View/Engine/Volt/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/View/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/View/Simple.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/ViewBaseInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Mvc/ViewInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Paginator/Adapter/Model.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Paginator/Adapter/NativeArray.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Paginator/Adapter/QueryBuilder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Paginator/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Registry.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Security.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Security/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Security/Random.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Session/Adapter/Libmemcached.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Session/Adapter/Redis.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Session/Bag.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Session/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Tag.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Tag/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Tag/Select.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Text.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Translate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Translate/Adapter/Csv.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Translate/Adapter/Gettext.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Translate/Adapter/NativeArray.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Translate/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Translate/Interpolator/AssociativeArray.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Translate/Interpolator/IndexedArray.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Validation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Validation/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Validation/Validator/Alnum.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Validation/Validator/Alpha.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Validation/Validator/Between.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Validation/Validator/Callback.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Validation/Validator/Confirmation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Validation/Validator/CreditCard.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Validation/Validator/Date.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Validation/Validator/Digit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Validation/Validator/Email.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Validation/Validator/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Validation/Validator/ExclusionIn.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Validation/Validator/File.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Validation/Validator/Identical.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Validation/Validator/InclusionIn.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Validation/Validator/Numericality.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Validation/Validator/PresenceOf.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Validation/Validator/Regex.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Validation/Validator/StringLength.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Validation/Validator/Uniqueness.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Validation/Validator/Url.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Validation/ValidatorInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/ValidationInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/Version.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/queue/Beanstalk.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/queue/beanstalk/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/phalcon/ide-stubs/src/Phalcon/queue/beanstalk/Job.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alenka/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alenka/.htrouter.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alenka/app/config/config.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alenka/app/config/loader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alenka/app/config/router.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alenka/app/config/services.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alenka/app/controllers/ControllerBase.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alenka/app/controllers/IndexController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alenka/app/views/index.phtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alenka/app/views/index/index.phtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alenka/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alenka/public/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alenka/public/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alenka/public/webtools.config.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alenka/public/webtools.php" beforeDir="false" />
+    <list default="true" id="20e00795-c652-4794-bce3-6689d59585a1" name="Changes" comment="Модели, миграции. Dispacher, composer.">
+      <change afterPath="$PROJECT_DIR$/app/migrations/2.0.0.0/products_sections.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/ProductsSections.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/Баранина.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/Вырезка свиная.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/Крыло куриное.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/Язык говяжий.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.phalcon/devtools.log" beforeDir="false" afterPath="$PROJECT_DIR$/.phalcon/devtools.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Sections.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Sections.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -380,7 +64,7 @@
       <workItem from="1669891776755" duration="2743000" />
       <workItem from="1670064429092" duration="1603000" />
       <workItem from="1670066981904" duration="3334000" />
-      <workItem from="1670075682153" duration="833000" />
+      <workItem from="1670075682153" duration="6192000" />
     </task>
     <task id="LOCAL-00001" summary="Первый коммит">
       <created>1669892652160</created>
@@ -389,7 +73,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669892652160</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Модели, миграции. Dispacher, composer.">
+      <created>1670076856556</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670076856556</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Модели, миграции. Dispacher, composer.">
+      <created>1670076887255</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670076887255</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -409,6 +107,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Первый коммит" />
-    <option name="LAST_COMMIT_MESSAGE" value="Первый коммит" />
+    <MESSAGE value="Модели, миграции. Dispacher, composer." />
+    <option name="LAST_COMMIT_MESSAGE" value="Модели, миграции. Dispacher, composer." />
   </component>
 </project>

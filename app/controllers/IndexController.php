@@ -3,24 +3,35 @@
 class IndexController extends ControllerBase
 {
 
-    public function indexAction()
+    public function authAction()
     {
+        $this->isApiAction = true;
+        $obj = $this->request->getJsonRawBody();
+        $ad_name = $obj->name;
+        $ad_password = $obj->password;
+        $admin = Admins::findFirst([
+            'name = :name:',
+            'bind' => $ad_name
+        ]);
 
-    }
+        if (!$admin) {
+            return [
+                '_error' => 'Введены неверные данные'
+            ];
+        }
 
-    public function getAllAction()
-    {
-       $this->isApiAction = true;
-       $set = Settings::find();
-       $sections = Sections::find();
-       $result = [];
-       foreach ($sections as $section){
-           $result[] = $section->toApi();
-       }
-       return [
-           'settings' => $set,
-           'sections' => $result
-       ];
+        if ($admin->password != sha1($ad_password)){
+            return [
+                '_error' => 'Введены неверные данные'
+            ];
+        }
+        $admin->token = sha1(random_bytes(500));
+        $admin->save();
+        return [
+            '_status' => true,
+            'token' => $admin->token
+        ];
+
     }
 
 }

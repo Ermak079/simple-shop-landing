@@ -2,6 +2,6 @@
 
 $router = $di->getRouter();
 
-$router->add('/all-info','Index::getAll');
+$router->add('/all-info','Products::getAll');
 
 $router->handle();

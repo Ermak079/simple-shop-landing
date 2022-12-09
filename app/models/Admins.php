@@ -18,7 +18,7 @@ class Admins extends \Phalcon\Mvc\Model
 
     /**
      *
-     * @var integer
+     * @var string
      */
     public $password;
 

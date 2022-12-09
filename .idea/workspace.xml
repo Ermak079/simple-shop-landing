@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="20e00795-c652-4794-bce3-6689d59585a1" name="Changes" comment="Модели, миграции. Dispacher, composer.">
-      <change afterPath="$PROJECT_DIR$/app/migrations/2.0.0.0/products_sections.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/ProductsSections.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/Баранина.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/Вырезка свиная.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/Крыло куриное.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/Язык говяжий.png" afterDir="false" />
+    <list default="true" id="20e00795-c652-4794-bce3-6689d59585a1" name="Changes" comment="Авторизация">
+      <change afterPath="$PROJECT_DIR$/app/controllers/SectionsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.phalcon/devtools.log" beforeDir="false" afterPath="$PROJECT_DIR$/.phalcon/devtools.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/router.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/router.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/IndexController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/Sections.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Sections.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Admins.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Admins.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +59,8 @@
       <workItem from="1669891776755" duration="2743000" />
       <workItem from="1670064429092" duration="1603000" />
       <workItem from="1670066981904" duration="3334000" />
-      <workItem from="1670075682153" duration="6192000" />
+      <workItem from="1670075682153" duration="6352000" />
+      <workItem from="1670582082586" duration="9277000" />
     </task>
     <task id="LOCAL-00001" summary="Первый коммит">
       <created>1669892652160</created>
@@ -87,7 +83,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670076887255</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Новый роут, миграция prod_section и модель">
+      <created>1670083169718</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670083169718</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Авторизация">
+      <created>1670586997991</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670586997991</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,6 +118,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Первый коммит" />
     <MESSAGE value="Модели, миграции. Dispacher, composer." />
-    <option name="LAST_COMMIT_MESSAGE" value="Модели, миграции. Dispacher, composer." />
+    <MESSAGE value="Новый роут, миграция prod_section и модель" />
+    <MESSAGE value="Авторизация" />
+    <option name="LAST_COMMIT_MESSAGE" value="Авторизация" />
   </component>
 </project>

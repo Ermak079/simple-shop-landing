@@ -11,7 +11,9 @@ class IndexController extends ControllerBase
         $ad_password = $obj->password;
         $admin = Admins::findFirst([
             'name = :name:',
-            'bind' => $ad_name
+            'bind' => [
+                'name' => $ad_name
+            ]
         ]);
 
         if (!$admin) {

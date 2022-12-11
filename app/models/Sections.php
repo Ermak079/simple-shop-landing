@@ -63,17 +63,18 @@ class Sections extends \Phalcon\Mvc\Model
         $products = [];
         foreach ($ps as $item){
             $prod = Products::findFirst('id =' . $item->product_id);
-            $products [] = $prod;
+            $products [] = $prod->toApi();
         }
         $sp = SectionsPictures::findFirst('section_id =' . $this->id);
         $pictures = null;
         if ($sp){
             $pictures = Pictures::findFirst($sp->picture_id);
+            $pictures = $pictures->file_name;
         }
         return [
             'name' => $this->name,
-            'pictures' => $pictures,
-            'products' => $products
+            'background' => $pictures,
+            'goods' => $products
         ];
     }
 

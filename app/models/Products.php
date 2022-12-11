@@ -69,4 +69,20 @@ class Products extends \Phalcon\Mvc\Model
         return parent::findFirst($parameters);
     }
 
+    public function toApi()
+    {
+        $pp = ProductsPictures::findFirst('product_id =' . $this->id);
+        $pictures = null;
+        if ($pp){
+            $pictures = Pictures::findFirst($pp->picture_id);
+            $pictures = $pictures->file_name;
+        }
+        return [
+            'name' => $this->name,
+            'photo' => $pictures,
+            'cost' => $this->price,
+            'amount' =>$this->count
+        ];
+    }
+
 }

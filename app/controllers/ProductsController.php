@@ -6,13 +6,18 @@ class ProductsController extends ControllerBase
     {
         $this->isApiAction = true;
         $set = Settings::find();
+        $res = [];
+        foreach ($set as $item)
+        {
+            $res[$item->key] = json_decode($item->value);
+        }
         $sections = Sections::find();
         $result = [];
         foreach ($sections as $section){
             $result[] = $section->toApi();
         }
         return [
-            'settings' => $set,
+            'settings' => $res,
             'sections' => $result
         ];
     }
@@ -43,7 +48,7 @@ class ProductsController extends ControllerBase
         ];
     }
 
-    public function removeProductAction()
+    public function editProductAction()
     {
         $this->isApiAction = true;
         $obj = $this->request->getJsonRawBody();
@@ -60,18 +65,18 @@ class ProductsController extends ControllerBase
                 '_error' => 'Нет прав для данного действия'
             ];
         }
-        $prod_name = $obj->prouct_name;
+        $prod_id = $obj->product_id;
         $product = Products::findFirst([
-            'product_name = :product_name:',
+            'id = :id:',
             'bind' => [
-                'product_name' => $prod_name
+                'id' => $prod_id
             ]
         ]);
 
         if (!$product){
             return [
                 '_status' => false,
-                '_error' => 'Нет такого товарова -> ' . $prod_name
+                '_error' => 'Нет такого товара -> ' . $product->name
             ];
         }
         $old_name = $product->name;
@@ -171,6 +176,44 @@ class ProductsController extends ControllerBase
             $new_set->value = $res;
             $new_set->save();
         }
+        return [
+            '_status' => true
+        ];
+    }
+
+    public function uploadPictureForProductAction()
+    {
+        $this->isApiAction = true;
+        $obj = $this->request->getPost();
+        $token = $obj['token'];
+        $admin = Admins::findFirst([
+            'token = :token:',
+            'bind' => [
+                'token' => $token
+            ]
+        ]);
+        if (!$admin){
+            return[
+                '_status' => false,
+                '_error' => 'Нет прав для данного действия'
+            ];
+        }
+        $file = $this->request->getUploadedFiles();
+        if (empty($file))
+        {
+            return [
+                '_status' => false
+            ];
+        }
+        $file = $file[0];
+        $picture = new Pictures();
+        $picture->file_name = rand(1, 9999999) . '.' . $file->getExtension();
+        $picture->save();
+        $file->moveTo('img/' . $picture->file_name);
+        $prod_id = $this->dispatcher->getParam('productId');
+        $product = Products::findFirst('id = ' . $prod_id);
+        $product->picture_id = $picture->id;
+        $product->save();
         return [
             '_status' => true
         ];

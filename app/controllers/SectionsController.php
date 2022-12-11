@@ -29,7 +29,7 @@ class SectionsController extends ControllerBase
         ];
     }
 
-    public function removeSectionAction()
+    public function editSectionAction()
     {
         $this->isApiAction = true;
         $obj = $this->request->getJsonRawBody();
@@ -102,6 +102,44 @@ class SectionsController extends ControllerBase
             ];
         }
         $section->delete();
+        return [
+            '_status' => true
+        ];
+    }
+
+    public function uploadPictureForSectionAction()
+    {
+        $this->isApiAction = true;
+        $obj = $this->request->getPost();
+        $token = $obj['token'];
+        $admin = Admins::findFirst([
+            'token = :token:',
+            'bind' => [
+                'token' => $token
+            ]
+        ]);
+        if (!$admin){
+            return[
+                '_status' => false,
+                '_error' => 'Нет прав для данного действия'
+            ];
+        }
+        $file = $this->request->getUploadedFiles();
+        if (empty($file))
+        {
+            return [
+                '_status' => false
+            ];
+        }
+        $file = $file[0];
+        $picture = new Pictures();
+        $picture->file_name = rand(1, 9999999) . '.' . $file->getExtension();
+        $picture->save();
+        $file->moveTo('img/' . $picture->file_name);
+        $section_id = $this->dispatcher->getParam('sectionId');
+        $section = Sections::findFirst('id = ' . $section_id);
+        $section->picture_id = $picture->id;
+        $section->save();
         return [
             '_status' => true
         ];

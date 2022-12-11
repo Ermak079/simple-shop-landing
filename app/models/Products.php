@@ -30,6 +30,18 @@ class Products extends \Phalcon\Mvc\Model
     public $count;
 
     /**
+     *
+     * @var integer
+     */
+    public $picture_id;
+
+    /**
+     *
+     * @var integer
+     */
+    public $section_id;
+
+    /**
      * Initialize method for model.
      */
     public function initialize()
@@ -71,15 +83,14 @@ class Products extends \Phalcon\Mvc\Model
 
     public function toApi()
     {
-        $pp = ProductsPictures::findFirst('product_id =' . $this->id);
-        $pictures = null;
-        if ($pp){
-            $pictures = Pictures::findFirst($pp->picture_id);
-            $pictures = $pictures->file_name;
+        $picture = null;
+        if ($this->picture_id){
+            $picture = Pictures::findFirst($this->picture_id);
+            $picture = 'http://' . $_SERVER['HTTP_HOST'] . '/img/' . $picture->file_name;
         }
         return [
             'name' => $this->name,
-            'photo' => $pictures,
+            'photo' => $picture,
             'cost' => $this->price,
             'amount' =>$this->count
         ];

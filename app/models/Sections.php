@@ -18,6 +18,12 @@ class Sections extends \Phalcon\Mvc\Model
     public $name;
 
     /**
+     *
+     * @var integer
+     */
+    public $picture_id;
+
+    /**
      * Initialize method for model.
      */
     public function initialize()
@@ -59,22 +65,24 @@ class Sections extends \Phalcon\Mvc\Model
 
     public function toApi()
     {
-        $ps = ProductsSections::find('section_id = ' . $this->id);
-        $products = [];
-        foreach ($ps as $item){
-            $prod = Products::findFirst('id =' . $item->product_id);
-            $products [] = $prod->toApi();
+        $products = Products::find([
+            'section_id =' . $this->id
+        ]);
+        $res = [];
+
+        foreach ($products as $product)
+        {
+            $res[] = $product->toApi();
         }
-        $sp = SectionsPictures::findFirst('section_id =' . $this->id);
         $pictures = null;
-        if ($sp){
-            $pictures = Pictures::findFirst($sp->picture_id);
-            $pictures = $pictures->file_name;
+        if ($this->picture_id){
+            $pictures = Pictures::findFirst("id = " . $this->picture_id);
+            $pictures = 'http://' . $_SERVER['HTTP_HOST'] . '/img/' . $pictures->file_name;
         }
         return [
             'name' => $this->name,
             'background' => $pictures,
-            'goods' => $products
+            'goods' => $res
         ];
     }
 

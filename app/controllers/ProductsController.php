@@ -30,6 +30,7 @@ class ProductsController extends ControllerBase
         ]);
         if (!$admin){
             return[
+                '_status' => false,
                 '_error' => 'Нет прав для данного действия'
             ];
         }
@@ -55,6 +56,7 @@ class ProductsController extends ControllerBase
         ]);
         if (!$admin){
             return[
+                '_status' => false,
                 '_error' => 'Нет прав для данного действия'
             ];
         }
@@ -68,6 +70,7 @@ class ProductsController extends ControllerBase
 
         if (!$product){
             return [
+                '_status' => false,
                 '_error' => 'Нет такого товарова -> ' . $prod_name
             ];
         }
@@ -96,6 +99,7 @@ class ProductsController extends ControllerBase
         ]);
         if (!$admin){
             return[
+                '_status' => false,
                 '_error' => 'Нет прав для данного действия'
             ];
         }
@@ -112,6 +116,61 @@ class ProductsController extends ControllerBase
             ];
         }
         $product->delete();
+        return [
+            '_status' => true
+        ];
+    }
+
+    public function addSettingAction()
+    {
+        $this->isApiAction = true;
+        $obj = $this->request->getJsonRawBody();
+        $token = $obj->token;
+        $admin = Admins::findFirst([
+            'token = :token:',
+            'bind' => [
+                'token' => $token
+            ]
+        ]);
+        if (!$admin){
+            return[
+                '_status' => false,
+                '_error' => 'Нет прав для данного действия'
+            ];
+        }
+
+        $data = (array) $this->request->getJsonRawBody();
+
+        if (empty($data))
+        {
+            return[
+                '_status' => false,
+                '_error' => 'Пустая запись'
+            ];
+        }
+
+        foreach ($data as $key => $value)
+        {
+            $res = json_encode($value);
+            $set = Settings::findFirst([
+                'key = :key:',
+                'bind' => [
+                    'key' => $key
+                ]
+            ]);
+
+            if ($set)
+            {
+                $set->value = $res;
+                $set->save();
+                continue;
+            }
+
+            $new_set = new Settings();
+            $new_set->key = $key;
+            $new_set->value = $res;
+            $new_set->save();
+        }
         return [
             '_status' => true
         ];

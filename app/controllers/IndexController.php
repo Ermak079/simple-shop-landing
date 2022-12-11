@@ -18,12 +18,14 @@ class IndexController extends ControllerBase
 
         if (!$admin) {
             return [
+                '_status' => false,
                 '_error' => 'Введены неверные данные'
             ];
         }
 
         if ($admin->password != sha1($ad_password)){
             return [
+                '_status' => false,
                 '_error' => 'Введены неверные данные'
             ];
         }

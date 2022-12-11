@@ -15,6 +15,7 @@ class SectionsController extends ControllerBase
         ]);
         if (!$admin){
             return[
+                '_status' => false,
                 '_error' => 'Нет прав для данного действия'
             ];
         }
@@ -41,6 +42,7 @@ class SectionsController extends ControllerBase
         ]);
         if (!$admin){
             return[
+                '_status' => false,
                 '_error' => 'Нет прав для данного действия'
             ];
         }
@@ -54,6 +56,7 @@ class SectionsController extends ControllerBase
 
         if (!$section){
             return [
+                '_status' => false,
                 '_error' => 'Нет такой секции товаров -> ' . $sec_name
             ];
         }
@@ -82,6 +85,7 @@ class SectionsController extends ControllerBase
         ]);
         if (!$admin){
             return[
+                '_status' => false,
                 '_error' => 'Нет прав для данного действия'
             ];
         }

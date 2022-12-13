@@ -76,19 +76,54 @@ class ProductsController extends ControllerBase
         if (!$product){
             return [
                 '_status' => false,
-                '_error' => 'Нет такого товара -> ' . $product->name
+                '_error' => 'Нет такого товара'
             ];
         }
-        $old_name = $product->name;
-        $new_prod_name = $obj->new_product_name;
-        $product->name = $new_prod_name;
-        $product->save();
+        $prod_name = $obj->product_name;
+        $count = $obj->count;
+        $price = $obj->price;
+        $picture = $obj->picture_id;
+        $section = $obj->section_id;
+        $flag = false;
+        if ($section)
+        {
+            $product->section_id = $section;
+            $flag = true;
+        }
+        if ($picture)
+        {
+            $product->picture_id = $picture;
+            $flag = true;
+        }
+        if ($count)
+        {
+            $product->count = $count;
+            $flag = true;
+        }
+        if ($price)
+        {
+            $product->price = $price;
+            $flag = true;
+        }
+        if ($prod_name)
+        {
+            $product->name = $prod_name;
+            $flag = true;
+        }
+        if ($flag)
+        {
+            $product->save();
+            return [
+                '_status' => true,
+                'product' => $product->toApi()
 
-        return [
-            '_status' => true,
-            'old_name' => $old_name,
-            'new_name' => $product->name
-        ];
+            ];
+        } else {
+            return [
+                '_status' => false,
+                '_error' => 'Нет данных для изменения продукта'
+            ];
+        }
     }
 
     public function deleteProductAction()
@@ -108,11 +143,11 @@ class ProductsController extends ControllerBase
                 '_error' => 'Нет прав для данного действия'
             ];
         }
-        $prod_name = $obj->product_name;
+        $prod_id = $obj->product_id;
         $product = Products::findFirst([
-            'name = :name:',
+            'id = :id:',
             'bind' => [
-                'name' => $prod_name
+                'id' => $prod_id
             ]
         ]);
         if (!$product){

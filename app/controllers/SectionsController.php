@@ -46,30 +46,35 @@ class SectionsController extends ControllerBase
                 '_error' => 'Нет прав для данного действия'
             ];
         }
-        $sec_name = $obj->section_name;
+        $section_id = $obj->section_id;
         $section = Sections::findFirst([
-            'name = :name:',
+            'id = :id:',
             'bind' => [
-                'name' => $sec_name
+                'id' => $section_id
             ]
         ]);
 
         if (!$section){
             return [
                 '_status' => false,
-                '_error' => 'Нет такой секции товаров -> ' . $sec_name
+                '_error' => 'Нет такой секции товаров'
             ];
         }
-        $old_name = $section->name;
         $new_sec_name = $obj->new_section_name;
-        $section->name = $new_sec_name;
-        $section->save();
-        
-        return [
-            '_status' => true,
-            'old_name' => $old_name,
-            'new_name' => $section->name
-        ];
+        if ($new_sec_name)
+        {
+            $section->name = $new_sec_name;
+            $section->save();
+            return [
+                '_status' => true,
+                'section' => $section
+            ];
+        } else {
+            return [
+                '_status' => false,
+                '_error' => 'Нет данных для изменения секции'
+            ];
+        }
     }
 
     public function deleteSectionAction()
@@ -89,11 +94,11 @@ class SectionsController extends ControllerBase
                 '_error' => 'Нет прав для данного действия'
             ];
         }
-        $sec_name = $obj->section_name;
+        $section_id = $obj->section_id;
         $section = Sections::findFirst([
-            'name = :name:',
+            'id = :id:',
             'bind' => [
-                'name' => $sec_name
+                'id' => $section_id
             ]
         ]);
         if (!$section){

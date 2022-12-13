@@ -60,7 +60,7 @@ class SectionsController extends ControllerBase
                 '_error' => 'Нет такой секции товаров'
             ];
         }
-        $new_sec_name = $obj->new_section_name;
+        $new_sec_name = $obj->new_section_name ?? false;
         if ($new_sec_name)
         {
             $section->name = $new_sec_name;

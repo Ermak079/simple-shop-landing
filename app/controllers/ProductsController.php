@@ -79,11 +79,11 @@ class ProductsController extends ControllerBase
                 '_error' => 'Нет такого товара'
             ];
         }
-        $prod_name = $obj->product_name;
-        $count = $obj->count;
-        $price = $obj->price;
-        $picture = $obj->picture_id;
-        $section = $obj->section_id;
+        $prod_name = $obj->product_name ?? false;
+        $count = $obj->amount ?? false;
+        $price = $obj->cost ?? false;
+        $picture = $obj->picture_id ?? false;
+        $section = $obj->section_id ?? false;
         $flag = false;
         if ($section)
         {

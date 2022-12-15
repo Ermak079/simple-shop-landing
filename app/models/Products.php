@@ -86,9 +86,10 @@ class Products extends \Phalcon\Mvc\Model
         $picture = null;
         if ($this->picture_id){
             $picture = Pictures::findFirst($this->picture_id);
-            $picture = 'http://' . $_SERVER['HTTP_HOST'] . '/img/' . $picture->file_name;
+            $picture = $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . '/img/' . $picture->file_name;
         }
         return [
+            'id' => $this->id,
             'name' => $this->name,
             'photo' => $picture,
             'cost' => $this->price,

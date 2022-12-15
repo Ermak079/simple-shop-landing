@@ -123,3 +123,15 @@ $di->setShared('router', function () {
 
     return $router;
 });
+
+$di->setShared("dispatcher", function () {
+    // Create events manager
+    $eventsManager = new \Phalcon\Events\Manager();
+    $eventsManager->attach('dispatch:beforeExecuteRoute', new ApiPlugin());
+
+    // Assign the eventsManager to the dispatcher
+    $dispatcher = new Phalcon\Mvc\Dispatcher();
+    $dispatcher->setEventsManager($eventsManager);
+
+    return $dispatcher;
+});

@@ -77,9 +77,10 @@ class Sections extends \Phalcon\Mvc\Model
         $pictures = null;
         if ($this->picture_id){
             $pictures = Pictures::findFirst("id = " . $this->picture_id);
-            $pictures = 'http://' . $_SERVER['HTTP_HOST'] . '/img/' . $pictures->file_name;
+            $pictures = $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . '/img/' . $pictures->file_name;
         }
         return [
+            'id' => $this->id,
             'name' => $this->name,
             'background' => $pictures,
             'goods' => $res

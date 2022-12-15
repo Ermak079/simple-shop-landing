@@ -18,7 +18,7 @@ class ProductsController extends ControllerBase
         }
         return [
             'settings' => $res,
-            'sections' => $result
+            'sections' => $result,
         ];
     }
 
@@ -39,12 +39,23 @@ class ProductsController extends ControllerBase
                 '_error' => 'Нет прав для данного действия'
             ];
         }
+
+        $section = Sections::findFirst();
+        if(!$section){
+            return[
+                '_status' => false,
+                '_error' => 'Не создано ни одной секции'
+            ];
+        }
+
         $product = new Products();
         $product->name = "Новый товар";
+        $product->section_id = $section->id;
         $product->save();
+        $product->refresh();
         return [
             '_status' => true,
-            'section' => $product->name
+            'section' => $product->toApi(),
         ];
     }
 
@@ -82,17 +93,11 @@ class ProductsController extends ControllerBase
         $prod_name = $obj->product_name ?? false;
         $count = $obj->amount ?? false;
         $price = $obj->cost ?? false;
-        $picture = $obj->picture_id ?? false;
         $section = $obj->section_id ?? false;
         $flag = false;
         if ($section)
         {
             $product->section_id = $section;
-            $flag = true;
-        }
-        if ($picture)
-        {
-            $product->picture_id = $picture;
             $flag = true;
         }
         if ($count)
@@ -179,7 +184,15 @@ class ProductsController extends ControllerBase
             ];
         }
 
-        $data = (array) $this->request->getJsonRawBody();
+        if (!isset($obj->settings))
+        {
+            return[
+                '_status' => false,
+                '_error' => 'Пустая запись'
+            ];
+        }
+
+        $data = (array) $obj->settings;
 
         if (empty($data))
         {

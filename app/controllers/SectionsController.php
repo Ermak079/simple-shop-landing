@@ -23,9 +23,10 @@ class SectionsController extends ControllerBase
         $section = new Sections();
         $section->name = 'Новая секция товаров';
         $section->save();
+        $section->refresh();
         return [
             '_status' => true,
-            'section' => $section->name
+            'section' => $section->toApi(),
         ];
     }
 
@@ -67,7 +68,7 @@ class SectionsController extends ControllerBase
             $section->save();
             return [
                 '_status' => true,
-                'section' => $section
+                'section' => $section->toApi(),
             ];
         } else {
             return [

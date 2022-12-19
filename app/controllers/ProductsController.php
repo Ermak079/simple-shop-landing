@@ -2,26 +2,6 @@
 
 class ProductsController extends ControllerBase
 {
-    public function getAllAction()
-    {
-        $this->isApiAction = true;
-        $set = Settings::find();
-        $res = [];
-        foreach ($set as $item)
-        {
-            $res[$item->key] = json_decode($item->value);
-        }
-        $sections = Sections::find();
-        $result = [];
-        foreach ($sections as $section){
-            $result[] = $section->toApi();
-        }
-        return [
-            'settings' => $res,
-            'sections' => $result,
-        ];
-    }
-
     public function addProductAction()
     {
         $this->isApiAction = true;
@@ -161,69 +141,6 @@ class ProductsController extends ControllerBase
             ];
         }
         $product->delete();
-        return [
-            '_status' => true
-        ];
-    }
-
-    public function addSettingAction()
-    {
-        $this->isApiAction = true;
-        $obj = $this->request->getJsonRawBody();
-        $token = $obj->token;
-        $admin = Admins::findFirst([
-            'token = :token:',
-            'bind' => [
-                'token' => $token
-            ]
-        ]);
-        if (!$admin){
-            return[
-                '_status' => false,
-                '_error' => 'Нет прав для данного действия'
-            ];
-        }
-
-        if (!isset($obj->settings))
-        {
-            return[
-                '_status' => false,
-                '_error' => 'Пустая запись'
-            ];
-        }
-
-        $data = (array) $obj->settings;
-
-        if (empty($data))
-        {
-            return[
-                '_status' => false,
-                '_error' => 'Пустая запись'
-            ];
-        }
-
-        foreach ($data as $key => $value)
-        {
-            $res = json_encode($value);
-            $set = Settings::findFirst([
-                'key = :key:',
-                'bind' => [
-                    'key' => $key
-                ]
-            ]);
-
-            if ($set)
-            {
-                $set->value = $res;
-                $set->save();
-                continue;
-            }
-
-            $new_set = new Settings();
-            $new_set->key = $key;
-            $new_set->value = $res;
-            $new_set->save();
-        }
         return [
             '_status' => true
         ];

@@ -38,5 +38,25 @@ class IndexController extends ControllerBase
 
     }
 
+    public function getAllAction()
+    {
+        $this->isApiAction = true;
+        $set = Settings::find();
+        $res = [];
+        foreach ($set as $item)
+        {
+            $res[$item->key] = json_decode($item->value);
+        }
+        $sections = Sections::find();
+        $result = [];
+        foreach ($sections as $section){
+            $result[] = $section->toApi();
+        }
+        return [
+            'settings' => $res,
+            'sections' => $result,
+        ];
+    }
+
 }
 
